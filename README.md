@@ -62,6 +62,23 @@
 | 08 | [التحكّم عن بُعد (SSH)](docs/08-remote-access.md) | مفاتيح، mDNS، أوامر جاهزة |
 | 09 | [تطبيقات arm64 و Flatpak](docs/09-apps.md) | ما يعمل، ما لا يعمل، نقل الحزم يدوياً |
 | 10 | [ورقة أوامر مرجعية](docs/10-cheatsheet.md) | كل الأوامر المهمة في صفحة واحدة |
+| 11 | [روابط التحميل الكاملة](docs/11-downloads.md) | صورة النظام، TWRP، مدير الإقلاع، النوى، صورة أندرويد، بصمات SHA-256 |
+
+---
+
+## روابط التحميل (مختصر)
+
+| الملف | الحجم | الرابط |
+|---|---|---|
+| صورة Ubuntu 26.04 لنابو | 1.78 GB | [تحميل](https://github.com/TheMojoMan/xiaomi-nabu/releases/download/ubuntu-26.04-v1.0.0/ubuntu-26.04-xiaomi-nabu.img.xz) |
+| TWRP المعدّل | 50 MB | [تحميل](https://github.com/TheMojoMan/xiaomi-nabu/releases/download/ubuntu-26.04-v1.0.0/V4-MODDED-TWRP-LINUX.img) |
+| DBPK Bootmanager | 4.9 MB | [تحميل](https://github.com/TheMojoMan/xiaomi-nabu/releases/download/ubuntu-26.04-v1.0.0/installer_bootmanager_NOSB.zip) |
+| حزمة ESP (`efi.tar`) | 70 MB | [تحميل](https://github.com/TheMojoMan/xiaomi-nabu/releases/download/ubuntu-26.04-v1.0.0/efi.tar) |
+| نواة 6.17.0 (الافتراضية) | 36 MB | [تحميل](https://github.com/zulf96/nabu-ubuntu/releases/download/nabu-kernels/6.17.0-UFS-slowdown+.efi) |
+| نواة 6.14.11 (احتياطية) | 31 MB | [تحميل](https://github.com/zulf96/nabu-ubuntu/releases/download/nabu-kernels/6.14.11.efi) |
+| إقلاع أندرويد HyperOS 1.0.1 + Magisk v27 | 128 MB | [تحميل](https://github.com/zulf96/nabu-ubuntu/releases/download/nabu-android-boot/Boot_HyperOS1.0.1_GlobalOriginal_PatchmagiskV27_by-Artoseven.img) |
+
+> التفاصيل والبصمات وطريقة التحقق: [docs/11-downloads.md](docs/11-downloads.md).
 
 ---
 
@@ -98,7 +115,7 @@ nabu-ubuntu/
 ├── CHANGELOG.md                  ← سجل التغييرات والقرارات
 ├── LICENSE                       ← MIT
 ├── Makefile                      ← make check / make test
-├── docs/                         ← 11 مستنداً عربياً مفصّلاً
+├── docs/                         ← 12 مستنداً عربياً مفصّلاً
 ├── scripts/
 │   ├── lib/common.sh             ← دوال مشتركة (root، mount ESP، كشف الجهاز)
 │   ├── post-install/

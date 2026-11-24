@@ -30,6 +30,8 @@ A complete, field-tested guide to running **Ubuntu 26.04.1 LTS (arm64)** on the
 - **Remote access over SSH** ([docs/08-remote-access.md](docs/08-remote-access.md)).
 - **arm64 app notes** ([docs/09-apps.md](docs/09-apps.md)) and a
   [command cheat sheet](docs/10-cheatsheet.md).
+- **All download links** — system image, TWRP, bootmanager, kernels, rooted
+  Android boot image, with sizes and SHA-256 ([docs/11-downloads.md](docs/11-downloads.md)).
 
 ## TL;DR results
 

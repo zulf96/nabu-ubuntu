@@ -160,3 +160,4 @@ sudo apt install --only-upgrade xiaomi-nabu-linux-6.17
 - بعد أي تغيير في الإقلاع: جرّب الإقلاعين (Ubuntu + Android) قبل أن تطمئن.
 
 → التالي: [05-kernels.md](05-kernels.md) لفهم الفرق بين النواتين.
+صورة إقلاع أندرويد الجذرية (Magisk) وروابطها: [11-downloads.md](11-downloads.md).

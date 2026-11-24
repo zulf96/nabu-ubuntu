@@ -5,7 +5,7 @@
   <defs>
     <style>
       .box   { rx: 14; ry: 14; stroke-width: 2; }
-      .t     { font-family: "DejaVu Sans", "Noto Sans Arabic", sans-serif; fill: #0f172a; }
+      .t     { font-family: "DejaVu Sans", "Noto Sans Arabic", sans-serif; }
       .h     { font-size: 20px; font-weight: 700; }
       .s     { font-size: 15px; }
       .m     { font-size: 13px; fill: #475569; font-family: "DejaVu Sans Mono", monospace; }

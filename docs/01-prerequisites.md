@@ -14,10 +14,15 @@
 
 ### أدوات الحاسوب
 
-- **ADB + Fastboot**: [Android Platform Tools](https://developer.android.com/studio/releases/platform-tools)
-  - لينكس: `sudo apt install android-tools-adb android-tools-fastboot`
+- **ADB + Fastboot**:
+  - لينكس: `sudo apt install android-tools-adb android-tools-fastboot` (وغيرها في [12-platforms.md](12-platforms.md))
+  - ويندوز: [Platform Tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
+    + تعريف Android Bootloader Interface
   - تحقّق: `adb version` و `fastboot --version`
 - **فكّ ضغط xz**: `xz -d` (لينكس) أو 7-Zip (ويندوز) أو The Unarchiver (macOS).
+
+> المسار الكامل من **لينكس** ومن **ويندوز** (تجهيز الأدوات، udev/السوائق، أوامر جاهزة،
+> ومشاكل كل نظام): [12-platforms.md](12-platforms.md).
 
 ## 2. فتح البوتلودر (مرة واحدة في العمر)
 

@@ -32,6 +32,8 @@ A complete, field-tested guide to running **Ubuntu 26.04.1 LTS (arm64)** on the
   [command cheat sheet](docs/10-cheatsheet.md).
 - **All download links** — system image, TWRP, bootmanager, kernels, rooted
   Android boot image, with sizes and SHA-256 ([docs/11-downloads.md](docs/11-downloads.md)).
+- **Linux and Windows host workflows** — tooling, full command sequences, and
+  per-OS pitfalls ([docs/12-platforms.md](docs/12-platforms.md)).
 
 ## TL;DR results
 

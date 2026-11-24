@@ -3,6 +3,20 @@
 > كل ملفات المشروع في مكان واحد: صورة النظام، أدوات التثبيت، النوى، صورة إقلاع أندرويد،
 > وملفات المستودع نفسها — مع الأحجام والبصمات وطريقة التحقق.
 
+## 0. أدوات الحاسوب (لينكس/ويندوز)
+
+| الأداة | لينكس | ويندوز |
+|---|---|---|
+| Platform Tools (adb/fastboot) | حزمة `android-tools-adb`/`android-tools-fastboot` | [ZIP رسمي](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) |
+| 7-Zip (فكّ xz على ويندوز) | لا يحتاج (`xz` مدمج) | [تحميل](https://www.7-zip.org/download.html) |
+| تعريف Fastboot | قواعد udev (في [12-platforms.md](12-platforms.md)) | [Google USB Driver](https://developer.android.com/studio/run/win-usb) أو [Zadig](https://zadig.akeo.ie/) |
+| فتح البوتلودر | غير رسمي | [Mi Unlock](https://en.miui.com/unlock/download_en.html) |
+| تمرير USB إلى WSL (اختياري) | — | [usbipd-win](https://github.com/dorssel/usbipd-win) |
+
+> دليل التجهيز خطوة بخطوة لكل نظام: [12-platforms.md](12-platforms.md).
+
+---
+
 ## 1. ملفات التثبيت الرسمية (Ubuntu 26.04 لنابو)
 
 المصدر: [إصدار `ubuntu-26.04-v1.0.0`](https://github.com/TheMojoMan/xiaomi-nabu/releases/tag/ubuntu-26.04-v1.0.0)

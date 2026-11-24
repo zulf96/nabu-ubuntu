@@ -153,6 +153,9 @@ adb shell "chmod +x /tmp/setup_ubuntu.sh && /tmp/setup_ubuntu.sh"
 adb sideload installer_bootmanager_NOSB.zip
 ```
 
+> على **ويندوز** نفس الأوامر داخل PowerShell (أضف `.\` قبل `fastboot.exe` إذا لم يكن في `PATH`).
+> لتجهيز الحاسوب والسوائق ومشاكل كل نظام: [12-platforms.md](12-platforms.md).
+
 ## استكشاف سريع
 
 ```bash

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 640" width="1120" height="640" role="img" aria-labelledby="title desc">
+  <title id="title">مخطط سلسلة الإقلاع على Xiaomi Pad 5 (nabu)</title>
+  <desc id="desc">البوتلودر المُرقَّع بـ DBPK يقلع rEFInd من ESP، ومنه ثلاث نقاط: نواة 6.17.0 الافتراضية، نواة 6.14.11 الاحتياطية، وReboot2Android.efi إلى boot_b.</desc>
+
+  <defs>
+    <style>
+      .box   { rx: 14; ry: 14; stroke-width: 2; }
+      .t     { font-family: "DejaVu Sans", "Noto Sans Arabic", sans-serif; fill: #0f172a; }
+      .h     { font-size: 20px; font-weight: 700; }
+      .s     { font-size: 15px; }
+      .m     { font-size: 13px; fill: #475569; font-family: "DejaVu Sans Mono", monospace; }
+      .lab   { font-size: 14px; fill: #334155; }
+      .arrow { stroke: #64748b; stroke-width: 2.5; fill: none; marker-end: url(#a); }
+      .dash  { stroke-dasharray: 6 5; }
+    </style>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1120" height="640" fill="#f8fafc"/>
+
+  <text class="t h" x="560" y="44" text-anchor="middle">سلسلة الإقلاع على Xiaomi Pad 5 (nabu)</text>
+  <text class="t s" x="560" y="70" text-anchor="middle" fill="#475569">Ubuntu 26.04.1 LTS + Android — عبر rEFInd و DBPK</text>
+
+  <!-- Bootloader -->
+  <rect class="box" x="360" y="100" width="400" height="88" fill="#dbeafe" stroke="#3b82f6" filter="url(#sh)"/>
+  <text class="t h" x="560" y="134" text-anchor="middle">البوتلودر (SM8150 UEFI)</text>
+  <text class="t s" x="560" y="160" text-anchor="middle" fill="#1e40af">مُرقَّع بـ DualBootKernelPatcher (DBPK)</text>
+
+  <!-- memory map side note -->
+  <rect class="box" x="800" y="100" width="280" height="88" fill="#fef3c7" stroke="#f59e0b" stroke-dasharray="6 5"/>
+  <text class="t s" x="940" y="130" text-anchor="middle" font-weight="700">خريطة الذاكرة المشتركة</text>
+  <text class="t m" x="940" y="152" text-anchor="middle">StackBase=0x9FC00000</text>
+  <text class="t m" x="940" y="172" text-anchor="middle">StackSize=0x00300000</text>
+  <path class="arrow dash" d="M 800 144 L 766 144"/>
+
+  <!-- rEFInd -->
+  <rect class="box" x="310" y="240" width="500" height="96" fill="#e0f2fe" stroke="#0284c7" filter="url(#sh)"/>
+  <text class="t h" x="560" y="274" text-anchor="middle">rEFInd — ESP</text>
+  <text class="t m" x="560" y="298" text-anchor="middle">/EFI/BOOT/bootaa64.efi + refind.conf</text>
+  <text class="t s" x="560" y="322" text-anchor="middle" fill="#0369a1">rotation 3 · timeout 5 · use_nvram false</text>
+  <path class="arrow" d="M 560 188 L 560 236"/>
+
+  <!-- three kernels -->
+  <rect class="box" x="60" y="392" width="300" height="86" fill="#dcfce7" stroke="#22c55e" filter="url(#sh)"/>
+  <text class="t h" x="210" y="424" text-anchor="middle">6.17.0 (افتراضية)</text>
+  <text class="t m" x="210" y="448" text-anchor="middle">6.17.0-UFS-slowdown+.efi</text>
+  <text class="t s" x="210" y="468" text-anchor="middle" fill="#15803d">pm8150b-charger · hot-plug ✅</text>
+
+  <rect class="box" x="410" y="392" width="300" height="86" fill="#f1f5f9" stroke="#64748b" filter="url(#sh)"/>
+  <text class="t h" x="560" y="424" text-anchor="middle">6.14.11 (احتياطية)</text>
+  <text class="t m" x="560" y="448" text-anchor="middle">6.14.11.efi</text>
+  <text class="t s" x="560" y="468" text-anchor="middle" fill="#475569">ln8000 · يلزم fw_devlink=off</text>
+
+  <rect class="box" x="760" y="392" width="300" height="86" fill="#ede9fe" stroke="#8b5cf6" filter="url(#sh)"/>
+  <text class="t h" x="910" y="424" text-anchor="middle">Reboot to Android</text>
+  <text class="t m" x="910" y="448" text-anchor="middle">/EFI/android/Reboot2Android.efi</text>
+  <text class="t s" x="910" y="468" text-anchor="middle" fill="#6d28d9">pstore → إقلاع boot_b</text>
+
+  <path class="arrow" d="M 470 336 L 210 388"/>
+  <path class="arrow" d="M 560 336 L 560 388"/>
+  <path class="arrow" d="M 650 336 L 910 388"/>
+
+  <!-- targets -->
+  <rect class="box" x="110" y="528" width="200" height="64" fill="#ffffff" stroke="#22c55e"/>
+  <text class="t s" x="210" y="565" text-anchor="middle">Ubuntu (شحن ساخن)</text>
+
+  <rect class="box" x="460" y="528" width="200" height="64" fill="#ffffff" stroke="#64748b"/>
+  <text class="t s" x="560" y="565" text-anchor="middle">Ubuntu (توافق أوسع)</text>
+
+  <rect class="box" x="810" y="528" width="200" height="64" fill="#ffffff" stroke="#8b5cf6"/>
+  <text class="t s" x="910" y="565" text-anchor="middle">Android (boot_b)</text>
+
+  <path class="arrow" d="M 210 478 L 210 524"/>
+  <path class="arrow" d="M 560 478 L 560 524"/>
+  <path class="arrow" d="M 910 478 L 910 524"/>
+
+  <!-- footer -->
+  <text class="t s" x="560" y="620" text-anchor="middle" fill="#64748b">
+    لا تحذف نواة تعمل. غيّر الافتراضية بـ scripts/boot/set-default-kernel.sh
+  </text>
+</svg>

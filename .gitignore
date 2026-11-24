@@ -1,0 +1,19 @@
+# ملفات مؤقتة ونواتج الاختبار
+*.log
+*.csv
+!tests/fixtures/*.csv
+*.bak
+*.bak.*
+*.orig
+*.rej
+
+# نسخ احتياطية من ملفات الإقلاع (لا تُرفع — كبيرة وتخصّ جهازاً واحداً)
+*.efi.bak*
+*.img
+*.img.xz
+
+# بيئة النظام
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+ts,cap,status,ibat_ma,vbat_mv,chg_name,chg_status,chg_online,chg_type,typec_partner
+2026-11-24T20:00:00,80,Discharging,500,3900000,pm8150b-charger,Discharging,0,,0
+2026-11-24T20:01:00,80,Charging,-1500,3950000,pm8150b-charger,Charging,1,DCP,1
+2026-11-24T20:31:00,85,Charging,-1400,4050000,pm8150b-charger,Charging,1,DCP,1
+2026-11-24T21:01:00,90,Charging,-1200,4150000,pm8150b-charger,Charging,1,DCP,1
+2026-11-24T21:10:00,90,Discharging,500,4100000,pm8150b-charger,Discharging,0,,0
+2026-11-24T22:00:00,92,Charging,-1000,4200000,pm8150b-charger,Charging,1,DCP,1
+2026-11-24T22:20:00,93,Full,-2,4410000,pm8150b-charger,Full,1,DCP,1

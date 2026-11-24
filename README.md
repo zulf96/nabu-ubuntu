@@ -135,6 +135,25 @@ make test      # كل ما سبق + تحليل سجل شحن تجريبي
 
 ---
 
+## النشر على GitHub
+
+المستودع مُهيَّأ محلياً (`.git` + أول commit جاهز). للرفع:
+
+```bash
+cd nabu-ubuntu
+
+# الطريقة 1: مستودع موجود مسبقاً على GitHub
+git remote add origin https://github.com/<USER>/nabu-ubuntu.git
+git push -u origin main
+
+# الطريقة 2: إنشاء المستودع ورفعه بأمر واحد (يتطلب gh)
+gh repo create nabu-ubuntu --public --source=. --push
+```
+
+> غيّر `<USER>` باسم حسابك. بعد الرفع سيعمل فحص CI تلقائياً على GitHub Actions.
+
+---
+
 ## تحذير وإخلاء مسؤولية
 
 - **هذا ليس مشروعاً رسمياً** لأوبونتو أو شاومي أو أي شركة.
